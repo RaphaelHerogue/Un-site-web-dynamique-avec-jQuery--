@@ -1,0 +1,44 @@
+#carrousel
+{
+    position:relative;
+    height:200px;
+    width:700px;
+    margin:auto;
+}
+
+#carrousel ul li
+{
+    position:absolute;
+    top:0;
+    left:0;
+    list-style: none;
+}
+
+.control
+{
+  height:80px;
+  width:100px;
+  color: red;
+  display: block;
+  z-index: 1;
+}
+
+.prev
+{
+  position:absolute;
+  left: 0;
+  height:80px;
+  width:100px;
+  color: red;
+  display: block;
+}
+
+.next
+{
+  position:absolute;
+  right: 0;
+  height:80px;
+  width:100px;
+  color: red;
+  display: block;
+}
