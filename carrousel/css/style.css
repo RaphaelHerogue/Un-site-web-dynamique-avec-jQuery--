@@ -1,6 +1,8 @@
 #carrousel
 {
-    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height:200px;
     width:700px;
     margin:auto;
@@ -8,9 +10,8 @@
 
 #carrousel ul li
 {
-    position:absolute;
-    top:0;
-    left:0;
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
