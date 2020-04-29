@@ -3,8 +3,10 @@ $(document).ready(function()
   $("#envoi").click(function(e)
   {
     e.preventDefault();
-    let pseudo = encodeURIComponent( $("#pseudo").val() );
-    let message = encodeURIComponent( $("#message").val() );
+    let pseudo = $("#pseudo").val();
+    let message = $("#message").val();
+    console.log(pseudo);
+    console.log(message);
 
     if(pseudo != "" && message != "")
     {
@@ -26,7 +28,7 @@ $(document).ready(function()
         $.ajax(
           {
             url : "charger.php?id=" + firstID,
-            type : GET,
+            type : "GET",
             success : function(html)
             {
               $("#messages").prepend(html);
@@ -37,4 +39,4 @@ $(document).ready(function()
     }
   charger();
 
-}
+});

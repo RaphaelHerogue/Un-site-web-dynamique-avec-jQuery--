@@ -14,8 +14,8 @@ if(isset($_POST['submit']))
     $insertion = $bdd->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
     echo "insertion";
     $insertion->execute(array(
-          'pseudo' => $pseudo,
-          'message' => $message
+          ':pseudo' => $pseudo,
+          ':message' => $message
       ));
       echo "exe insertion";
   }
