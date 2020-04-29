@@ -5,8 +5,6 @@ $(document).ready(function()
     e.preventDefault();
     let pseudo = $("#pseudo").val();
     let message = $("#message").val();
-    console.log(pseudo);
-    console.log(message);
 
     if(pseudo != "" && message != "")
     {
