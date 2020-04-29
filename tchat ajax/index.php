@@ -9,9 +9,9 @@
 
     <div id="messages">
       <?php
-        include "connexion.php";
+        require_once("connexion.php");
 
-        $requete = $bdd->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,10');
+        $requete = $pdo->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,10');
 
         while($donnees = $requete->fetch())
         {
